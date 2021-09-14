@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+      <div class="h111 text-center display-4 text-info">
+      <h1 > Welcome at To do List </h1>
+    </div>
+<div class="container col-6 col-sm-7">
+    <div class="row justify-content-center">
+   <div class="">
+       <button onclick="display()"  type="button" class="addTask btn">Add Task to be done</button>
+
+   </div>
+
+</div>
+<div class="container ">
+    <div class="row  justify-content-center ">
+        
+   <div class="content ">
+    <button class="close" onclick="none()"><i class="fas fa-times"></i></button>
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="" style="color: rgb(73, 12, 129);">Add Task</label>
+              <input type="text" class="form-control addd " placeholder=" add a new task .." id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="" style="color: rgb(73, 12, 129);">Deadline</label>
+              <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button onclick="task()" type="button" class="btn " style="background-color: rgb(155, 82, 224); color: white;">Add</button>
+          </form>
+    </div>
+</div>
+   </div>
+</div>
+</div>
+<div class="row justify-content-center">
+    <div class="car col-md-7 col-sm-7">
+   <div id="tasks" class="alert">
+       <h6 class="text-center Text">There is NO Tasks Yet..</h6>
+   </div>
+</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body{
+    background-image:linear-gradient(135deg ,#2908368a , #5d1c7794);
+    
+}
+
+h1{
+    margin: 18px;
+    text-align: center;
+    color: rgb(37, 3, 51);
+    animation: flash 5s infinite;
+    font-size: 50px;
+    font-style: italic;
+}
+@keyframes flash {
+    0%, 50%, 100% {
+       color: rgb(37, 3, 51);
+    }
+    25%, 75% {
+       color:rgb(223, 172, 228);
+    }
+ }
+ .addTask{
+     background-color: rgb(242, 217, 245);
+     
+    border: 0px;
+    margin: 20px;
+ }
+ .content{
+     background-color: white;
+     width: 500px;
+     height: 270px;
+     z-index: 300;
+     position: absolute;
+     top: 10px;
+     display: none;
+ }
+ .close{
+     border: none;
+     font-size: 20px;
+     margin: 20px;
+     background-color: transparent;
+ }
+ form{
+
+margin: 20px;
+ }
+#tasks{
+    background-color:rgb(242, 217, 245) ;
+
+ 
+}
+.new-task{
+    background-color: white;
+    border-radius: 5px ;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:2px solid #d1d3d4 ;
+}
+#new{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.delete{
+    background-color:  rgb(138, 71, 201);
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    
+}
+@media (max-width: 576px) {
+    .content{
+        background-color: white;
+        width: 350px;
+        height: 300px;
+        z-index: 300;
+        position: absolute;
+        top: 5px;
+        display: none;
+        
+    }
+   .car{
+    width: 360px;
+       align-items: center;
+   }
+   .btn1{
+       align-items: center;
+   }
+}
+
